@@ -4,6 +4,8 @@ import scoreboardImg from "./assets/scoreboard.png";
 import photoOne from "./assets/photo-one.jpg";
 import photoTwo from "./assets/photo-two.jpg";
 import statelineTeamImg from "./assets/stateline-team.jpg";
+import eraLogo from "./assets/era-logo.png";
+import statelineLogo from "./assets/stateline-logo.png";
 
 const STATELINE_URL =
   "https://greenwichskatingclub.com/stateline-hawks";
@@ -90,7 +92,11 @@ function App() {
           </div>
 
           <div className="gallery__color-block">
-            <span>GSC</span>
+            <img
+              src={eraLogo}
+              alt="ERA"
+              className="gallery__color-block-logo"
+            />
           </div>
         </div>
       </section>
@@ -101,18 +107,40 @@ function App() {
 
       <section className="program">
         <div className="program__inner">
-          <div className="program__marker">
-            <span>About The Program</span>
+          <div className="program__video-frame">
+            <div
+              className="program__video-accent program__video-accent--start"
+              aria-hidden="true"
+            />
+
+            <div
+              className="program__video-accent program__video-accent--end"
+              aria-hidden="true"
+            />
+
+            <iframe
+              className="program__video"
+              src="https://player.vimeo.com/video/1146814668?h=782dd3f8d6"
+              title="vimeo-player"
+              frameBorder="0"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+              allowFullScreen
+            />
           </div>
 
-          <div className="program__copy">
-            <p>
-              GSC Travel Hockey is open to children of GSC members, ages 6–18.
-              We typically field three teams at the Squirt (U10), Peewee (U12),
-              and Bantam (U14) levels, along with 8–10 Mite teams for players
-              ages 6–8. We also partner with Wings Arena to offer split-season
-              Midget teams at the U16 and U18 levels.
-            </p>
+          <div className="program__content">
+            <h2 className="program__heading">Mites to Midget</h2>
+
+            <div className="program__copy">
+              <p>
+                GSC Travel Hockey is open to children of GSC members, ages 6–18.
+                We typically field three teams at the Squirt (U10), Peewee (U12),
+                and Bantam (U14) levels, along with 8–10 Mite teams for players
+                ages 6–8. We also partner with Wings Arena to offer split-season
+                Midget teams at the U16 and U18 levels.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -123,13 +151,33 @@ function App() {
 
       <section className="stateline">
         <div className="stateline__inner">
-          <img
-            src={statelineTeamImg}
-            alt="Stateline Hawks team"
-            className="stateline__image"
-          />
+          <div className="stateline__image-frame">
+            <div
+              className="stateline__image-accent stateline__image-accent--start"
+              aria-hidden="true"
+            />
+
+            <div
+              className="stateline__image-accent stateline__image-accent--end"
+              aria-hidden="true"
+            />
+
+            <img
+              src={statelineTeamImg}
+              alt="Stateline Hawks team"
+              className="stateline__image"
+            />
+          </div>
 
           <div className="stateline__content">
+            <img
+              src={statelineLogo}
+              alt="Stateline Hawks"
+              className="stateline__logo"
+            />
+
+            <h2 className="stateline__heading">Stateline Hawks</h2>
+
             <div className="stateline__copy">
               <p>
                 After graduating from the GSC Mite Program, female players also
