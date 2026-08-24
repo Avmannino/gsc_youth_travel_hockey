@@ -9,7 +9,7 @@ import statelineLogo from "./assets/stateline-logo.png";
 import Footer from "./Footer.jsx";
 
 const STATELINE_URL =
-  "https://greenwichskatingclub.com/stateline-hawks";
+  "https://wingsarenact.wixstudio.com/gscnewsite/stateline-girls-hockey";
 
 function ArrowIcon() {
   return (
