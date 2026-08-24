@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import "./Footer.css";
-import gscLogo from "./assets/gsc-logo.png";
+import gscLogo from "./assets/gsc-alt-logo.png";
 
 /*
   UPDATE THIS ONE VALUE when the final public GSC
@@ -332,7 +332,7 @@ function ConnectPanel() {
             <PinIcon />
 
             <span>
-              Cardinal Road · Greenwich, Connecticut
+              15 Cardinal Road · Greenwich, CT 06830
             </span>
           </a>
 
