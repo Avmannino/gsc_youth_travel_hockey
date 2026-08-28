@@ -142,6 +142,10 @@ function App() {
                 ages 6–8. We also partner with Wings Arena to offer split-season
                 Midget teams at the U16 and U18 levels.
               </p>
+
+              <p className="program__note">
+                Registration is open to GSC members only.
+              </p>
             </div>
           </div>
         </div>

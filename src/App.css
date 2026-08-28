@@ -343,6 +343,17 @@
   letter-spacing: -0.01em;
 }
 
+.program__copy .program__note {
+  margin-top: clamp(16px, 2vw, 22px);
+  padding-left: 14px;
+
+  border-left: 3px solid var(--red);
+
+  color: var(--navy);
+
+  font-weight: 700;
+}
+
 /* =========================================================
    STATELINE
 ========================================================= */
