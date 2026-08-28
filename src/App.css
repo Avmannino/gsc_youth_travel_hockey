@@ -101,6 +101,8 @@
 }
 
 .mission__heading {
+  max-width: 980px;
+
   margin:
     0
     0
@@ -132,6 +134,12 @@
   line-height: 1.58;
 
   letter-spacing: -0.015em;
+}
+
+@media (min-width: 1025px) {
+  .mission__inner {
+    width: min(var(--content-width), calc(100% - 80px));
+  }
 }
 
 /* =========================================================
@@ -343,7 +351,7 @@
   width: 100%;
 
   padding:
-    clamp(72px, 8vw, 105px)
+    clamp(22px, 8vw, 55px)
     0
     clamp(82px, 9vw, 120px);
 
@@ -414,6 +422,8 @@
 .stateline__content {
   flex: 1 1 auto;
   min-width: 0;
+
+  margin-top: -28px;
 }
 
 .stateline__logo {
@@ -545,7 +555,7 @@
   .masthead__logo {
     width: clamp(220px, 30vw, 460px);
     margin-left: 20px;
-    margin-top: calc(7px - clamp(36px, 4vw, 60px) / 2);
+    margin-top: calc(27px - clamp(36px, 4vw, 60px) / 2);
   }
 
   .gallery__inner {
@@ -557,9 +567,9 @@
    MASTHEAD LOGO NUDGE (1015px-1800px)
 ========================================================= */
 
-@media (min-width: 1015px) and (max-width: 1800px) {
+@media (min-width: 1015px) {
   .masthead__logo {
-    margin-left: calc(20px - clamp(0px, (100vw - var(--content-width)) / 2, 136px));
+    margin-left: calc(160px - clamp(0px, (100vw - var(--content-width)) / 2, 136px));
   }
 }
 
@@ -569,7 +579,7 @@
 
 @media (min-width: 1025px) {
   .masthead__logo {
-    margin-top: calc(17px - clamp(36px, 4vw, 60px) / 2);
+    margin-top: calc(37px - clamp(36px, 4vw, 60px) / 2);
   }
 }
 
@@ -667,7 +677,7 @@
   .masthead__logo {
     width: clamp(209px, 28.5vw, 437px);
     margin-left: -10px;
-    margin-top: calc(2px - clamp(36px, 4vw, 60px) / 2);
+    margin-top: calc(14px - clamp(36px, 4vw, 60px) / 2);
   }
 
   .masthead__scoreboard {
@@ -781,6 +791,10 @@
     padding-left: 24px;
 
     width: calc(100% - 36px);
+  }
+
+  .stateline__content {
+    margin-top: 0;
   }
 
   .stateline__image-frame {
