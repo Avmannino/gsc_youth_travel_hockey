@@ -11,7 +11,7 @@ import midgetPoster from "./assets/midget-poster.jpg";
 import Footer from "./Footer.jsx";
 
 const STATELINE_URL =
-  "https://wingsarenact.wixstudio.com/gscnewsite/stateline-girls-hockey";
+  "https://www.greenwichskatingclub.com/stateline-girls-hockey";
 
 function ArrowIcon() {
   return (
