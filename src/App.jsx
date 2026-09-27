@@ -6,6 +6,8 @@ import photoTwo from "./assets/photo-two.jpg";
 import statelineTeamImg from "./assets/stateline-team.jpg";
 import eraLogo from "./assets/era-logo.png";
 import statelineLogo from "./assets/stateline-logo.png";
+import midgetVideo from "./assets/midget.mp4";
+import midgetPoster from "./assets/midget-poster.jpg";
 import Footer from "./Footer.jsx";
 
 const STATELINE_URL =
@@ -120,14 +122,13 @@ function App() {
               aria-hidden="true"
             />
 
-            <iframe
+            <video
               className="program__video"
-              src="https://player.vimeo.com/video/1146814668?h=782dd3f8d6"
-              title="vimeo-player"
-              frameBorder="0"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              allowFullScreen
+              src={midgetVideo}
+              poster={midgetPoster}
+              controls
+              playsInline
+              preload="metadata"
             />
           </div>
 

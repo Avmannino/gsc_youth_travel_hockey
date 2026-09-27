@@ -297,6 +297,10 @@
   height: 100%;
 
   border: 0;
+
+  object-fit: cover;
+
+  background: #000;
 }
 
 .program__content {
