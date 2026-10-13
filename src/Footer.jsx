@@ -2,11 +2,11 @@ import {
   useRef,
   useState,
 } from "react";
-import gscLogo from "./assets/gsc-alt-logo.png";
+import gscAltLogo from "./assets/gsc-alt-logo.png";
 import "./Footer.css";
 
 const SITE_BASE_URL =
-  "https://wingsarenact.wixstudio.com/gscnewsite";
+  "https://www.greenwichskatingclub.com";
 
 const MEMBER_LOGIN_URL =
   "https://www.greenwichskatingclub.org/login";
@@ -14,7 +14,7 @@ const MEMBER_LOGIN_URL =
 const MEMBERS_SITE_URL =
   "https://members.greenwichskatingclub.org";
 
-const CENTER_ICE_LOGO_SRC = gscLogo;
+const CENTER_ICE_LOGO_SRC = gscAltLogo;
 
 const exploreGroups = [
   {
@@ -22,7 +22,7 @@ const exploreGroups = [
     links: [
       {
         label: "About GSC",
-        href: `${SITE_BASE_URL}/about-gsc`,
+        href: `${SITE_BASE_URL}/about`,
       },
       {
         label: "Club History",
